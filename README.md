@@ -1,8 +1,17 @@
 # On-Device RTL / FPGA Design
 
-온디바이스 과정에서 진행한 **Verilog RTL 및 FPGA 설계 프로젝트**를 정리한 포트폴리오 저장소입니다.
+온디바이스 과정에서 진행한 **Verilog/SystemVerilog RTL 및 FPGA 설계 프로젝트**를 정리한 포트폴리오 저장소입니다.
 
 ## Projects
+
+### [RV32I Single-Cycle CPU](./fpga-rv32i-single-cycle)
+
+SystemVerilog로 32-bit RISC-V Single-Cycle CPU의 Control Unit과 전체 Datapath를 설계한 개인 프로젝트입니다.
+
+- **Stack:** SystemVerilog, RISC-V RV32I, Xilinx Vivado
+- **Architecture:** Control Unit, PC, Register File, ALU, Immediate, Instruction/Data Memory
+- **Key Features:** 37개 RV32I 명령어, Load/Store, Branch/JAL/JALR, Bubble Sort 흐름 검증
+- **My Role:** CPU RTL 전체 설계, instruction decode, memory access, testbench 및 waveform 분석
 
 ### [FPGA UART/FIFO Sensor Control System](./fpga-uart-fifo-sensor-system)
 
@@ -24,8 +33,9 @@ Digilent Basys3 보드에서 동작하는 디지털 시계와 스톱워치 통�
 
 ## Focus Areas
 
+- RISC-V ISA 기반 CPU Control Unit 및 Datapath 설계
 - FSM 및 Datapath 기반 RTL 설계
 - FPGA 주변장치와 UART/FIFO 시스템 통합
-- Verilog 테스트벤치와 파형 기반 기능 검증
+- SystemVerilog/Verilog 테스트벤치와 파형 기반 기능 검증
 - 센서 timing, timeout 및 checksum 처리
 - 문제 상황 재현과 설계 개선
