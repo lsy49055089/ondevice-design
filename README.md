@@ -4,6 +4,15 @@
 
 ## Projects
 
+### [FPGA UART/FIFO Sensor Control System](./fpga-uart-fifo-sensor-system)
+
+Stopwatch·Watch·DHT11·HC-SR04를 UART/FIFO와 하나의 Basys3 시스템으로 통합한 프로젝트입니다.
+
+- **Stack:** Verilog HDL, Xilinx Vivado, Basys3 FPGA, DHT11, HC-SR04
+- **Architecture:** FSM/Datapath, UART RX/TX, FIFO, ASCII Decoder/Sender, 공용 FND 출력
+- **Key Features:** PC ASCII 제어, 온습도·거리 측정, 시간 기능, timeout·checksum 검증
+- **My Role:** DHT11 RTL·검증, 최종 통합 테스트벤치, FND 및 센서 Control 통합 참여
+
 ### [FPGA Stopwatch & Watch](./fpga-stopwatch-watch)
 
 Digilent Basys3 보드에서 동작하는 디지털 시계와 스톱워치 통합 시스템입니다.
@@ -13,11 +22,10 @@ Digilent Basys3 보드에서 동작하는 디지털 시계와 스톱워치 통�
 - **Key Features:** 100 Hz tick, 시간 계수, 버튼 디바운싱, Moment 캡처, 4자리 7-Segment 표시
 - **My Role:** Stopwatch FSM·Datapath 설계, Moment 기능 구현, 테스트벤치 작성 및 시뮬레이션 검증
 
-소스 코드, Basys3 제약 파일, 테스트벤치와 시스템 구조도는 프로젝트 폴더에서 확인할 수 있습니다.
-
 ## Focus Areas
 
 - FSM 및 Datapath 기반 RTL 설계
-- FPGA 주변장치 및 디지털 시스템 통합
+- FPGA 주변장치와 UART/FIFO 시스템 통합
 - Verilog 테스트벤치와 파형 기반 기능 검증
+- 센서 timing, timeout 및 checksum 처리
 - 문제 상황 재현과 설계 개선
