@@ -2,6 +2,8 @@
 
 Verilog·SystemVerilog 기반 RTL 설계와 FPGA 시스템 구현 결과를 정리한 포트폴리오 저장소입니다.
 
+> **Related Conference Paper:** [Parallel Decision Tree Hardware](https://github.com/lsy49055089/Graduation-Thesis) — 현재 노드와 좌·우 자식 노드를 병렬 계산하고, 논문 명세의 4-state FSM으로 제어한 RTL 설계입니다.
+
 ## Projects
 
 ### [RV32I Single-Cycle CPU](./fpga-rv32i-single-cycle)
